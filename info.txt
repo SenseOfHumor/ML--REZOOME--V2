@@ -1,0 +1,5 @@
+To generate the config.cfg file for training
+python -m spacy init config config.cfg --lang en --pipeline spancat --optimize efficiency
+
+To train the model
+python -m spacy train config.cfg --output ./output --paths.train train.spacy --paths.dev train.spacy

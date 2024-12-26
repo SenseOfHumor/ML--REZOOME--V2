@@ -1,77 +1,113 @@
 import spacy
 import json
 from spacy.tokens import DocBin
-from Data_Train_JSON import convert_training_data
-## Creating blank SpaCy language model
+from spacy.training import Example
+
+# 1) Create a blank SpaCy pipeline
 nlp = spacy.blank("en")
-doc_bin = DocBin()  ## DocBin to store training data
 
-## convert the training file
-entity_data = convert_training_data("train.json")
+# 2) Function to read line-delimited JSON and convert to (text, {"entities": ...}) 
+def convert_training_data(line_delimited_file):
+    """
+    Reads line-delimited JSON (each line is one JSON object).
+    Converts each record to (text, {"entities": [(start, end, label), ...]})
+    """
+    TRAIN_DATA = []
 
-def convert_to_spans(entity_data):
-    '''
-    Converts the entity dats to spans format
+    # Read and parse each line
+    with open(line_delimited_file, "r", encoding="utf-8") as f:
+        for line in f:
+            item = json.loads(line)
+            text = item["content"]
+            entities = []
 
-    Extended description of function:
-    This function takes the entity data and converts it to the spans format
-    which is required because simple NER does not allow overlapping spans
+            for annotation in item["annotation"]:
+                # Skip if no label
+                if not annotation["label"]:
+                    print("Empty label found:", annotation)
+                    continue
 
-    Returns:
-    span_data: List of tuples
-    '''
+                label = annotation["label"][0]  # single label
+                for point in annotation["points"]:
+                    start = point["start"]
+                    end   = point["end"]
+                    entities.append((start, end, label))
+
+            TRAIN_DATA.append((text, {"entities": entities}))
+    return TRAIN_DATA
+
+# 3) Convert the training data to "spans" format
+def convert_to_spans(training_data):
+    """
+    Converts (text, {"entities": [(start, end, label), ...]})
+    to (text, {"spans": {"my_spans": [(start, end, label), ...]}})
+    """
     span_data = []
-
-    for text, annotations in entity_data:
-        spans = annotations["entities"]
-        span_data.append((text, {"spans": spans}))
+    for text, annot_dict in training_data:
+        entities = annot_dict["entities"]
+        span_data.append((text, {"spans": {"my_spans": entities}}))
     return span_data
 
+# 4) Read from the original, line-delimited JSON
+raw_training_data = convert_training_data("pretrain.json")
 
-def get_labels(data):
-    '''
-    Extracts unique labels from the data
+# 5) Convert "entities" to "spans"
+TRAIN_DATA = convert_to_spans(raw_training_data)
 
-    Extended description of function:
-    This function takes the data and extracts the unique labels from the data
+# 6) Set up your labels
+labels = [
+    "Skills", "College Name", "Graduation Year", "Designation",
+    "Companies worked at", "Email Address", "Location",
+    "Name", "Degree", "Years of Experience"
+]
 
-    Returns:
-    labels: List
-    '''
-    labels = []
-
-    for _, annotations in data: ## the _ is a placeholder for the text
-        for entity in annotations["entities"]:
-            label = entity[2]
-            if label not in labels:
-                labels.append(label)
-    return labels
-
-
-TRAIN_DATA = convert_to_spans(entity_data)
-labels = get_labels(entity_data)
-
-## Adding SpanCategorizer component
+# 7) Add SpanCategorizer to pipeline
 spancat = nlp.add_pipe("spancat", config={"spans_key": "my_spans"})
+print("Labels in spancat before initialization:", spancat.labels)
 
-## Adding labels to the SpanCategorizer
+# 8) Add labels to spancat
 for label in labels:
     spancat.add_label(label)
+    print(f"Added label: {label}")
 
-## TRAIN_DATA to SpaCy Doc object
-doc_bin = DocBin()  ## DocBin to store training data
-
-for text, annotations in TRAIN_DATA:
+# 9) Convert TRAIN_DATA → spaCy Examples, ensuring valid Span objects
+examples = []
+for text, annots in TRAIN_DATA:
     doc = nlp.make_doc(text)
-    spans = [       ## create spans
-        doc.char_span(start, end, label=label)
-        for start, end, label in annotations["spans"]
-        if doc.char_span(start, end, label=label) is not None
-    ]
-    doc.spans["my_spans"] = spans   ## assigning the spans to the my_spans key
-    doc_bin.add(doc)  ## add the Doc to the DocBin
+    
+    # Build actual Span objects
+    my_spans = []
+    for start, end, label in annots["spans"]["my_spans"]:
+        # Validate offsets (avoid negative or out-of-bounds)
+        if 0 <= start < end <= len(doc.text):
+            span = doc.char_span(start, end, label=label)
+            if span is not None:
+                my_spans.append(span)
+        else:
+            # Debug: if you want to see invalid offsets
+            print(f"Invalid span: ({start}, {end}) in text: '{text[start:end]}'")
+    
+    example = Example.from_dict(doc, {"spans": {"my_spans": my_spans}})
+    examples.append(example)
 
-## Save DocBin to the disk
-doc_bin.to_disk("training_data.spacy")
+# 10) Initialize spancat on examples
+spancat.initialize(lambda: examples, nlp=nlp)
+print("Labels in spancat after initialization:", spancat.labels)
 
+# 11) Build a DocBin and store each doc’s “my_spans”
+doc_bin = DocBin()
+for text, annots in TRAIN_DATA:
+    doc = nlp.make_doc(text)
+    doc_spans = []
+    for start, end, label in annots["spans"]["my_spans"]:
+        # same check as above
+        if 0 <= start < end <= len(doc.text):
+            span = doc.char_span(start, end, label=label)
+            if span:
+                doc_spans.append(span)
+    doc.spans["my_spans"] = doc_spans
+    doc_bin.add(doc)
 
+# 12) Finally, save out the DocBin
+doc_bin.to_disk("train_data.spacy")
+print("Training data saved to train_data.spacy")
