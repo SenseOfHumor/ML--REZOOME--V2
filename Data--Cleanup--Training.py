@@ -17,7 +17,7 @@ print(skills[:5])   ## first 5 skills
 ## Format training data
 TRAIN_DATA = []   ## array to hold the training data
 
-for skill in skills:
+for skill in skills[:100000]:
   TRAIN_DATA.append((skill, {"entities": [(0, len(skill), "ACTION")]}))
 print(TRAIN_DATA[:5])   ## first 5 entities (formatted as SpaCy training data)
 
@@ -49,3 +49,4 @@ for i, (text, annotations) in enumerate(TRAIN_DATA):
 
   ## Save DocBin to the disk
   doc_bin.to_disk("train.spacy")
+print("Processing complete. Saved to train.spacy")
