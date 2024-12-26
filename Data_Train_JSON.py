@@ -48,7 +48,10 @@ def convert_training_data(file_path):
 
         ## process annotations
         for annotation in item["annotation"]:
-            label = annotation["label"]  ## grab individual label
+
+            if not annotation["label"]:  # Check if the label is empty
+                print(f"Empty label found in: {annotation}")
+            label = annotation["label"][0]  ## grab individual label
 
             for point in annotation["points"]:
                 start = point["start"]
@@ -62,6 +65,6 @@ def convert_training_data(file_path):
 
 
 ## check workings
-fix_training_data("pretrain.json")
-data = convert_training_data("train.json")
-print(data[:2])
+# fix_training_data("pretrain.json")
+# data = convert_training_data("train.json")
+# print(data[:2])
