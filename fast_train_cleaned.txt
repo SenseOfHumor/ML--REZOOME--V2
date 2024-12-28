@@ -1,0 +1,500 @@
+talking __label__non_skill
+Apache Kafka __label__skill
+playing __label__non_skill
+Flask __label__skill
+playing __label__non_skill
+Kubernetes __label__skill
+eating __label__non_skill
+walking __label__non_skill
+walking __label__non_skill
+Figma __label__skill
+VPNs __label__skill
+Kotlin __label__skill
+cooking __label__non_skill
+listening __label__non_skill
+shopping __label__non_skill
+Scrum __label__skill
+UI/UX Design __label__skill
+Time Management __label__skill
+R __label__skill
+climbing __label__non_skill
+working __label__non_skill
+C# __label__skill
+Shell Scripting __label__skill
+Penetration Testing __label__skill
+shopping __label__non_skill
+MATLAB __label__skill
+Penetration Testing __label__skill
+shouting __label__non_skill
+daydreaming __label__non_skill
+staring __label__non_skill
+living __label__non_skill
+Adobe XD __label__skill
+staring __label__non_skill
+sleeping __label__non_skill
+Data Analysis __label__skill
+Social Media Marketing __label__skill
+Data Analysis __label__skill
+shopping __label__non_skill
+reading __label__non_skill
+arguing __label__non_skill
+daydreaming __label__non_skill
+playing __label__non_skill
+skipping __label__non_skill
+Swift __label__skill
+staring __label__non_skill
+cooking __label__non_skill
+shouting __label__non_skill
+Azure __label__skill
+Social Media Marketing __label__skill
+jumping __label__non_skill
+NumPy __label__skill
+Game Development __label__skill
+dreaming __label__non_skill
+running __label__non_skill
+Unity __label__skill
+staring __label__non_skill
+Teamwork __label__skill
+MATLAB __label__skill
+Technical Support __label__skill
+cleaning __label__non_skill
+resting __label__non_skill
+staring __label__non_skill
+Collaboration __label__skill
+Swift __label__skill
+Kubernetes __label__skill
+staring __label__non_skill
+Copywriting __label__skill
+Conflict Resolution __label__skill
+Agile Methodologies __label__skill
+jumping __label__non_skill
+iOS __label__skill
+walking __label__non_skill
+shopping __label__non_skill
+CSS __label__skill
+PHP __label__skill
+shouting __label__non_skill
+reading __label__non_skill
+walking __label__non_skill
+shouting __label__non_skill
+Technical Support __label__skill
+Python __label__skill
+typing __label__non_skill
+Agile Methodologies __label__skill
+Terraform __label__skill
+dancing __label__non_skill
+Interpersonal Skills __label__skill
+Data Science __label__skill
+eating __label__non_skill
+fishing __label__non_skill
+Figma __label__skill
+C++ __label__skill
+ETL __label__skill
+living __label__non_skill
+Keras __label__skill
+HTML __label__skill
+Shell Scripting __label__skill
+CSS __label__skill
+waiting __label__non_skill
+climbing __label__non_skill
+Networking __label__skill
+laughing __label__non_skill
+arguing __label__non_skill
+Adaptability __label__skill
+3D Modeling __label__skill
+thinking deeply __label__non_skill
+Scala __label__skill
+DevOps __label__skill
+Firebase __label__skill
+shouting __label__non_skill
+C++ __label__skill
+Mobile App Development __label__skill
+SQL __label__skill
+skipping __label__non_skill
+Flexibility __label__skill
+jogging __label__non_skill
+typing __label__non_skill
+singing __label__non_skill
+Agile Methodologies __label__skill
+cooking __label__non_skill
+talking __label__non_skill
+Agile Methodologies __label__skill
+resting __label__non_skill
+working __label__non_skill
+Terraform __label__skill
+Firebase __label__skill
+ETL __label__skill
+humming __label__non_skill
+Machine Learning __label__skill
+Project Management __label__skill
+playing __label__non_skill
+daydreaming __label__non_skill
+jumping __label__non_skill
+resting __label__non_skill
+Negotiation __label__skill
+singing __label__non_skill
+AWS __label__skill
+smiling __label__non_skill
+Interpersonal Skills __label__skill
+climbing __label__non_skill
+sleeping __label__non_skill
+Empathy __label__skill
+Microsoft Excel __label__skill
+blinking __label__non_skill
+watching TV __label__non_skill
+humming __label__non_skill
+watching TV __label__non_skill
+Project Management __label__skill
+shopping __label__non_skill
+smiling __label__non_skill
+thinking __label__non_skill
+Scrum __label__skill
+Unreal Engine __label__skill
+resting __label__non_skill
+HTML __label__skill
+R __label__skill
+VPNs __label__skill
+Ruby on Rails __label__skill
+Adaptability __label__skill
+AWS __label__skill
+Negotiation __label__skill
+running __label__non_skill
+Budgeting __label__skill
+daydreaming __label__non_skill
+chatting __label__non_skill
+running __label__non_skill
+chatting __label__non_skill
+climbing __label__non_skill
+Agile Methodologies __label__skill
+laughing __label__non_skill
+staring __label__non_skill
+Cloud Computing __label__skill
+Docker __label__skill
+Decision Making __label__skill
+working __label__non_skill
+talking __label__non_skill
+writing __label__non_skill
+resting __label__non_skill
+SQL __label__skill
+walking __label__non_skill
+Teamwork __label__skill
+living __label__non_skill
+Penetration Testing __label__skill
+CRM Systems __label__skill
+playing __label__non_skill
+Empathy __label__skill
+talking __label__non_skill
+thinking deeply __label__non_skill
+reading __label__non_skill
+JavaScript __label__skill
+Jenkins __label__skill
+ELK Stack __label__skill
+Graphics Programming __label__skill
+Blender __label__skill
+smiling __label__non_skill
+Problem Solving __label__skill
+typing __label__non_skill
+Docker __label__skill
+Kubernetes __label__skill
+jumping __label__non_skill
+Azure __label__skill
+CI/CD __label__skill
+singing __label__non_skill
+shouting __label__non_skill
+Java __label__skill
+Tableau __label__skill
+Java __label__skill
+Keras __label__skill
+3D Modeling __label__skill
+SQL __label__skill
+talking __label__non_skill
+AWS __label__skill
+living __label__non_skill
+Shell Scripting __label__skill
+Scrum __label__skill
+ETL __label__skill
+Agile Methodologies __label__skill
+humming __label__non_skill
+walking __label__non_skill
+Animation __label__skill
+Public Speaking __label__skill
+smiling __label__non_skill
+Leadership __label__skill
+blinking __label__non_skill
+Networking __label__skill
+ELK Stack __label__skill
+waiting __label__non_skill
+Mobile App Development __label__skill
+listening __label__non_skill
+gossiping __label__non_skill
+UI/UX Design __label__skill
+talking __label__non_skill
+Game Development __label__skill
+Linux __label__skill
+playing __label__non_skill
+Jenkins __label__skill
+JavaScript __label__skill
+Teamwork __label__skill
+Penetration Testing __label__skill
+Machine Learning __label__skill
+Terraform __label__skill
+daydreaming __label__non_skill
+living __label__non_skill
+Time Management __label__skill
+Microsoft Excel __label__skill
+Data Analysis __label__skill
+Content Writing __label__skill
+Java __label__skill
+thinking deeply __label__non_skill
+CRM Systems __label__skill
+MATLAB __label__skill
+running __label__non_skill
+Shell Scripting __label__skill
+Adobe XD __label__skill
+Hadoop __label__skill
+skipping __label__non_skill
+TensorFlow __label__skill
+playing __label__non_skill
+playing __label__non_skill
+shopping __label__non_skill
+dancing __label__non_skill
+blinking __label__non_skill
+Ansible __label__skill
+singing __label__non_skill
+ELK Stack __label__skill
+jumping __label__non_skill
+gossiping __label__non_skill
+C++ __label__skill
+PostgreSQL __label__skill
+Scrum __label__skill
+CI/CD __label__skill
+listening __label__non_skill
+dancing __label__non_skill
+Figma __label__skill
+R __label__skill
+blinking __label__non_skill
+talking __label__non_skill
+Linux __label__skill
+Machine Learning __label__skill
+Django __label__skill
+shouting __label__non_skill
+resting __label__non_skill
+dancing __label__non_skill
+arguing __label__non_skill
+humming __label__non_skill
+living __label__non_skill
+writing __label__non_skill
+watching TV __label__non_skill
+Power BI __label__skill
+resting __label__non_skill
+humming __label__non_skill
+DevOps __label__skill
+singing __label__non_skill
+Git __label__skill
+Jenkins __label__skill
+SEO __label__skill
+CSS __label__skill
+talking __label__non_skill
+Social Media Marketing __label__skill
+watching TV __label__non_skill
+Firebase __label__skill
+gossiping __label__non_skill
+Decision Making __label__skill
+Android __label__skill
+thinking __label__non_skill
+Spark __label__skill
+daydreaming __label__non_skill
+Leadership __label__skill
+playing __label__non_skill
+Negotiation __label__skill
+Penetration Testing __label__skill
+dreaming __label__non_skill
+Customer Support __label__skill
+jumping __label__non_skill
+Negotiation __label__skill
+gossiping __label__non_skill
+cooking __label__non_skill
+Unity __label__skill
+Flexibility __label__skill
+fishing __label__non_skill
+Social Media Marketing __label__skill
+Cloud Computing __label__skill
+dancing __label__non_skill
+singing __label__non_skill
+watching TV __label__non_skill
+smiling __label__non_skill
+PostgreSQL __label__skill
+working __label__non_skill
+Game Development __label__skill
+listening __label__non_skill
+thinking deeply __label__non_skill
+Scala __label__skill
+eating __label__non_skill
+UI/UX Design __label__skill
+painting __label__non_skill
+Copywriting __label__skill
+Deep Learning __label__skill
+thinking deeply __label__non_skill
+Budgeting __label__skill
+Project Management __label__skill
+skipping __label__non_skill
+Empathy __label__skill
+laughing __label__non_skill
+NumPy __label__skill
+resting __label__non_skill
+jogging __label__non_skill
+JavaScript __label__skill
+Kotlin __label__skill
+daydreaming __label__non_skill
+C++ __label__skill
+HTML __label__skill
+resting __label__non_skill
+JavaScript __label__skill
+HTML __label__skill
+ETL __label__skill
+listening __label__non_skill
+walking __label__non_skill
+waiting __label__non_skill
+painting __label__non_skill
+reading __label__non_skill
+Adobe XD __label__skill
+dreaming __label__non_skill
+jumping __label__non_skill
+fishing __label__non_skill
+Conflict Resolution __label__skill
+reading __label__non_skill
+Bootstrap __label__skill
+walking __label__non_skill
+fishing __label__non_skill
+smiling __label__non_skill
+Swift __label__skill
+climbing __label__non_skill
+smiling __label__non_skill
+watching TV __label__non_skill
+Adobe XD __label__skill
+shopping __label__non_skill
+Java __label__skill
+Decision Making __label__skill
+eating __label__non_skill
+staring __label__non_skill
+Teamwork __label__skill
+thinking __label__non_skill
+Pandas __label__skill
+JavaScript __label__skill
+Budgeting __label__skill
+Microsoft Excel __label__skill
+waiting __label__non_skill
+working __label__non_skill
+resting __label__non_skill
+talking __label__non_skill
+Figma __label__skill
+watching TV __label__non_skill
+ETL __label__skill
+dreaming __label__non_skill
+Terraform __label__skill
+TensorFlow __label__skill
+Public Speaking __label__skill
+dreaming __label__non_skill
+DevOps __label__skill
+laughing __label__non_skill
+typing __label__non_skill
+waiting __label__non_skill
+cleaning __label__non_skill
+walking __label__non_skill
+walking __label__non_skill
+fishing __label__non_skill
+ETL __label__skill
+dancing __label__non_skill
+Penetration Testing __label__skill
+Decision Making __label__skill
+NumPy __label__skill
+MongoDB __label__skill
+CI/CD __label__skill
+living __label__non_skill
+Shell Scripting __label__skill
+singing __label__non_skill
+waiting __label__non_skill
+Email Marketing __label__skill
+listening __label__non_skill
+ETL __label__skill
+skipping __label__non_skill
+gossiping __label__non_skill
+cooking __label__non_skill
+CI/CD __label__skill
+dreaming __label__non_skill
+fishing __label__non_skill
+Negotiation __label__skill
+singing __label__non_skill
+Terraform __label__skill
+climbing __label__non_skill
+jumping __label__non_skill
+React __label__skill
+sleeping __label__non_skill
+fishing __label__non_skill
+cleaning __label__non_skill
+listening __label__non_skill
+PHP __label__skill
+resting __label__non_skill
+jumping __label__non_skill
+Python __label__skill
+staring __label__non_skill
+listening __label__non_skill
+working __label__non_skill
+jogging __label__non_skill
+shopping __label__non_skill
+cleaning __label__non_skill
+R __label__skill
+Shell Scripting __label__skill
+Teamwork __label__skill
+Scala __label__skill
+Keras __label__skill
+fishing __label__non_skill
+Decision Making __label__skill
+sleeping __label__non_skill
+Apache Kafka __label__skill
+Copywriting __label__skill
+Figma __label__skill
+skipping __label__non_skill
+blinking __label__non_skill
+cooking __label__non_skill
+Zabbix __label__skill
+Collaboration __label__skill
+living __label__non_skill
+cooking __label__non_skill
+Unity __label__skill
+Unreal Engine __label__skill
+eating __label__non_skill
+PostgreSQL __label__skill
+Leadership __label__skill
+Hadoop __label__skill
+talking __label__non_skill
+Unity __label__skill
+playing __label__non_skill
+blinking __label__non_skill
+painting __label__non_skill
+PostgreSQL __label__skill
+Project Management __label__skill
+PHP __label__skill
+gossiping __label__non_skill
+Collaboration __label__skill
+DevOps __label__skill
+VPNs __label__skill
+fishing __label__non_skill
+eating __label__non_skill
+painting __label__non_skill
+jumping __label__non_skill
+Nagios __label__skill
+thinking deeply __label__non_skill
+arguing __label__non_skill
+Agile Methodologies __label__skill
+R __label__skill
+Content Writing __label__skill
+humming __label__non_skill
+CI/CD __label__skill
+dreaming __label__non_skill
+Decision Making __label__skill
+climbing __label__non_skill
+Copywriting __label__skill
+fishing __label__non_skill
+typing __label__non_skill
+resting __label__non_skill
